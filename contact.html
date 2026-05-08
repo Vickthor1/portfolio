@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Vickthor1</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <header class="header">
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="projects.html">Projetos</a>
+            <a href="about.html">Sobre</a>
+            <a href="contact.html">Contato</a>
+        </nav>
+        <div class="theme-toggle">
+            <button id="theme-btn" onclick="toggleTheme()">🌙</button>
+        </div>
+    </header>
+
+    <!-- Elementos HUD -->
+    <div class="hud-elements">
+        <div class="hud-bar-top"></div>
+        <div class="hud-bar-bottom"></div>
+        <div class="hud-bar-left"></div>
+        <div class="hud-bar-right"></div>
+        <div class="status-indicator">SISTEMA ONLINE</div>
+        <div class="system-info">
+            <div>CONTATO</div>
+            <div>STATUS: ATIVO</div>
+            <div>LOCAL: BRASIL</div>
+        </div>
+    </div>
+
+    <!-- Scanlines -->
+    <div class="scanlines"></div>
+
+    <section class="contact-section">
+        <div class="contact-container">
+            <h1>Entre em Contato</h1>
+            <p>Pronto para transformar sua ideia em realidade digital? Vamos criar algo extraordinário juntos.</p>
+
+            <div class="contact-info">
+                <div class="contact-card">
+                    <h3>GitHub</h3>
+                    <p>Código fonte e projetos open source</p>
+                    <a href="https://github.com/Vickthor1" target="_blank">@Vickthor1</a>
+                </div>
+                <div class="contact-card">
+                    <h3>LinkedIn</h3>
+                    <p>Perfil profissional e networking</p>
+                    <a href="#" target="_blank">Em breve</a>
+                </div>
+                <div class="contact-card">
+                    <h3>Email</h3>
+                    <p>Contato direto para projetos</p>
+                    <span id="email-text">vickthor.dev@gmail.com</span>
+                    <button onclick="copyEmail()" class="copy-btn">Copiar Email</button>
+                </div>
+            </div>
+
+            <div class="contact-form-section">
+                <h2>Envie uma Mensagem</h2>
+                <form class="contact-form" id="contact-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Nome Completo" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Email Profissional" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" placeholder="Assunto do Projeto" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Descreva seu projeto, ideias e expectativas..." rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Enviar Mensagem</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <div class="music-player">
+        <button id="music-btn" onclick="toggleMusic()">🎵</button>
+        <audio id="bg-music" loop>
+            <source src="assets/audio/ambient.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+
+    <script src="assets/js/contact.js"></script>
+</body>
+</html>

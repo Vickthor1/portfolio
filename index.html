@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vickthor1 - Portfólio</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/particles.css">
+    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div id="preload">
+        <div class="preload-content">
+            <div class="spinner"></div>
+            <p>Carregando...</p>
+        </div>
+    </div>
+
+    <div id="hero" class="hero-section">
+        <div class="particles" id="particles"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">Vickthor1</h1>
+            <p class="hero-subtitle" id="typing-text"></p>
+            <button class="explore-btn" onclick="scrollToMenu()">Explorar Projetos</button>
+        </div>
+    </div>
+
+    <!-- Elementos HUD -->
+    <div class="hud-elements">
+        <div class="hud-bar-top"></div>
+        <div class="hud-bar-bottom"></div>
+        <div class="hud-bar-left"></div>
+        <div class="hud-bar-right"></div>
+        <div class="status-indicator">SISTEMA ONLINE</div>
+        <div class="system-info">
+            <div>PORTFÓLIO v2.0</div>
+            <div>STATUS: ATIVO</div>
+            <div>LOCAL: BRASIL</div>
+        </div>
+    </div>
+
+    <!-- Scanlines -->
+    <div class="scanlines"></div>
+
+    <header class="header">
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="projects.html">Projetos</a>
+            <a href="about.html">Sobre</a>
+            <a href="contact.html">Contato</a>
+        </nav>
+        <div class="theme-toggle">
+            <button id="theme-btn" onclick="toggleTheme()">🌙</button>
+        </div>
+    </header>
+
+    <section id="menu-section" class="menu-section">
+        <h2>Explore minhas tecnologias</h2>
+        <p class="menu-instruction">Menu interativo - clique nas tecnologias para detalhes</p>
+        <nav id="radial-menu" class="radial-menu">
+            <div class="menu-center">
+                <div class="menu-icon" id="menu-toggle">☰</div>
+            </div>
+            <div class="menu-items">
+                <div class="menu-item" data-tech="html" onclick="openPanel('html')">
+                    <span class="tech-icon">🟠</span>
+                    <span class="tech-name">HTML</span>
+                </div>
+                <div class="menu-item" data-tech="css" onclick="openPanel('css')">
+                    <span class="tech-icon">🔵</span>
+                    <span class="tech-name">CSS</span>
+                </div>
+                <div class="menu-item" data-tech="js" onclick="openPanel('js')">
+                    <span class="tech-icon">🟡</span>
+                    <span class="tech-name">JavaScript</span>
+                </div>
+                <div class="menu-item" data-tech="laravel" onclick="openPanel('laravel')">
+                    <span class="tech-icon">🔴</span>
+                    <span class="tech-name">Laravel</span>
+                </div>
+                <div class="menu-item" data-tech="php" onclick="openPanel('php')">
+                    <span class="tech-icon">🟣</span>
+                    <span class="tech-name">PHP</span>
+                </div>
+                <div class="menu-item" data-tech="github" onclick="openPanel('github')">
+                    <span class="tech-icon">⚫</span>
+                    <span class="tech-name">GitHub</span>
+                </div>
+                <div class="menu-item" data-tech="apis" onclick="openPanel('apis')">
+                    <span class="tech-icon">🌐</span>
+                    <span class="tech-name">APIs</span>
+                </div>
+            </div>
+        </nav>
+    </section>
+
+    <div id="side-panel" class="side-panel">
+        <div class="panel-header">
+            <h2 id="panel-title" class="panel-title"></h2>
+            <p id="panel-subtitle" class="panel-subtitle"></p>
+        </div>
+        <div class="tech-details">
+            <div class="detail-item">
+                <div class="detail-label">Descrição</div>
+                <div class="detail-value" id="panel-description"></div>
+            </div>
+            <div class="detail-item">
+                <div class="detail-label">Nível de Experiência</div>
+                <div class="detail-value">
+                    <div class="level-bar" id="level-bar"></div>
+                </div>
+            </div>
+            <div class="detail-item">
+                <div class="detail-label">Projetos Relacionados</div>
+                <div class="detail-value" id="related-projects"></div>
+            </div>
+        </div>
+        <button class="close-panel" onclick="closePanel()" aria-label="Fechar painel">×</button>
+    </div>
+
+    <section id="projects" class="projects-section">
+        <h2>Projetos</h2>
+        <div id="projects-grid" class="projects-grid"></div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2024 Vickthor1. Todos os direitos reservados.</p>
+            <div class="social-links">
+                <a href="https://github.com/Vickthor1" target="_blank">GitHub</a>
+                <a href="#" target="_blank">LinkedIn</a>
+                <a href="mailto:email@example.com">Email</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/scripts.js"></script>
+</body>
+</html>

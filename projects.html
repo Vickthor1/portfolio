@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projetos Interativos - Vickthor1</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <header class="header">
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="projects.html">Projetos</a>
+            <a href="about.html">Sobre</a>
+            <a href="contact.html">Contato</a>
+        </nav>
+        <div class="theme-toggle">
+            <button id="theme-btn" onclick="toggleTheme()">🌙</button>
+        </div>
+    </header>
+
+    <!-- Elementos HUD -->
+    <div class="hud-elements">
+        <div class="hud-bar-top"></div>
+        <div class="hud-bar-bottom"></div>
+        <div class="hud-bar-left"></div>
+        <div class="hud-bar-right"></div>
+        <div class="status-indicator">SISTEMA ONLINE</div>
+        <div class="system-info">
+            <div>PROJETOS</div>
+            <div>STATUS: ATIVO</div>
+            <div>LOCAL: BRASIL</div>
+        </div>
+    </div>
+
+    <!-- Scanlines -->
+    <div class="scanlines"></div>
+
+    <section class="projects-section">
+        <h1>Projetos & Experiências</h1>
+        <p>Uma coleção de soluções técnicas que demonstram expertise em desenvolvimento full-stack, design de interfaces e arquitetura de sistemas.</p>
+        <div id="projects-grid" class="projects-grid"></div>
+    </section>
+
+    <section class="interactive-projects">
+        <h2>Experiências Interativas</h2>
+        <p>Projetos experimentais que exploram os limites da tecnologia web e interatividade avançada.</p>
+        <div id="interactive-grid" class="interactive-grid"></div>
+    </section>
+
+    <div id="project-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-header">
+                <h3 id="modal-title"></h3>
+            </div>
+            <div class="modal-body">
+                <iframe id="project-iframe" src="" frameborder="0"></iframe>
+            </div>
+            <div class="modal-footer">
+                <button id="fullscreen-btn" onclick="toggleFullscreen()">⛶</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/projects.js"></script>
+</body>
+</html>
