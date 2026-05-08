@@ -782,8 +782,8 @@ html {
 }
 
 .status-indicator {
-    position: absolute;
-    top: 20px;
+    position: fixed;
+    top: 100px;
     right: 20px;
     background: var(--bg-glass);
     border: 1px solid var(--border);
@@ -794,6 +794,8 @@ html {
     color: var(--text-primary);
     text-transform: uppercase;
     letter-spacing: 1px;
+    z-index: 50;
+    pointer-events: none;
 }
 
 .status-indicator::before {
@@ -845,7 +847,7 @@ html {
 
 .system-info {
     position: absolute;
-    bottom: 20px;
+    bottom: -100px;
     left: 20px;
     background: var(--bg-glass);
     border: 1px solid var(--border);
@@ -854,7 +856,8 @@ html {
     font-family: 'Rajdhani', sans-serif;
     font-size: 0.7rem;
     color: var(--text-primary);
-    opacity: 0.8;
+    opacity: 0;
+    pointer-events: none;
 }
 
 .system-info div {
@@ -1089,7 +1092,7 @@ html {
 
 /* Contact Section */
 .contact-section {
-    padding: 140px 20px 80px;
+    padding: 160px 20px 80px;
     min-height: auto;
     display: flex;
     justify-content: center;
@@ -1271,7 +1274,7 @@ html {
 
 /* About Section */
 .about-section {
-    padding: 120px 20px 50px;
+    padding: 160px 20px 50px;
     min-height: 100vh;
 }
 
